@@ -4,11 +4,17 @@ class FundingRound
     @@all = []
 
     def initialize(startup, venture_cap, type, investment)
-        @startup = startup
-        @venture_capitalist = venture_cap
-        @type = type
-        @investment = investment
+        
+        
         @@all << self
+        investment *= 1.0
+        if investment < 0 || investment.class == Float
+            @investment = investment
+            @startup = startup
+            @venture_capitalist = venture_cap
+            @type = type
+        end
+
     end
 
     def self.all

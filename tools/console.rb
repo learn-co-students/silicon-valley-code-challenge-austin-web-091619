@@ -18,5 +18,15 @@ al.offer_contract(swoogle, "series a", 1000000000)
 al.offer_contract(poogle, "angle", 10000000)
 google.sign_contract(marge, "angle", 12345)
 swoogle.sign_contract(marge, "angle", 1222345)
+VentureCapitalist.all 
+VentureCapitalist.tres_commas_club
+google.num_funding_rounds
+swoogle.num_funding_rounds
+google.total_funds
+google.investors
+google.big_investors
+al.portfolio
+al.biggest_investment
+al.invested("chow mein")
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
